@@ -4,47 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APP 1</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="inicio-buttons">
-    <button id="inicio-login"></button>
-    <button id="inicio-registro"></button>
+    <div id="inicio">
+        <h1>home</h1>
+    <button id="inicio-registro">register</button>
+    <button id="inicio-login">login</button>
     </div>
 
-    <div class="pantalla-registro">
-        <h1>Registrar usuario</h1>
-        <input type="text" id="registro-user" placeholder="user">
-        <input type="text" id="registro-nombre" placeholder="name">
-        <input type="text" id="registro-password" placeholder="password">
-        <button id="registro-button">Registrar</button>
-        <p id="registro-volver">Volver a la pantalla ppal</p>
-    </div>
+    <div id="pantalla-registro">
+        <h1>register</h1>
+        <input type="text" placeholder="Url image" id="image-registro"  class="input">
+        <input type="text" placeholder="user" id="user-registro" class="input">
+        <input type="text" placeholder="name" id="name-registro" class="input">
+        <input type="password" placeholder="password" id="password-registro" class="input">
+        <button id="registrar">registrar</button>
+        <p id="volver-inicio-registro">volver a pantalla de inicio</p>
+      </div>
+      
+      <div id="pantalla-login">
+        <h1>login</h1>
+        <input type="text" placeholder="user" id="user-login" class="input">
+        <input type="password" placeholder="password" id="password-login" class="input">
+        <button id="enviar">enviar</button>
+        <p id="volver-inicio-login">volver a pantalla de inicio</p>
+      </div>
+  
 
-    <div class="pantalla-login">
-        <h1>Login</h1>
-        <input type="text" id="login-user" placeholder="user">
-        <input type="text" id="login-password" placeholder="password">
-        <button id="login-button">Login</button>
-        <p id="registro-volver">Volver a la pantalla ppal</p>
+
+    <div id="create-post">
+        <h4 id="message">crear post</h4>
+       
+            <input type="text" placeholder="Url image" id="image"  class="input">
+        
+      
+            <input type="text" placeholder="Title" id="title"  class="input">
+      
+        
+            <input type="text" placeholder="Description" id="description"  class="input">
+        
+        <button id="create">guardar Post</button>
+        <p id="volver-inicio-post">volver a pantalla de inicio</p>
     </div>
-    
-    <div class="create-post">
-        <h4 id="message">Create post</h4>
-        <div class="input">
-            <input type="text" placeholder="url image (opcional)" id="url-image" class="input">
-        </div>
-        <div class="input">
-            <input type="text" placeholder="título" id="title" class="input">
-        </div>
-        <div class="input">
-            <input type="text" placeholder="Descripción" id="description" class="input">
-        </div>
-        <button id="create">Guardar</button>
-        <p id="create-volver">Volver a la pantalla ppal</p>
-    </div>
+   
+  
+
+    <script src="index.js"></script>
+
 </body>
 
 </html>
