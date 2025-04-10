@@ -22,6 +22,8 @@ const imageRegistroInput = document.getElementById("image-registro")
 const userInput = document.getElementById("user-registro")
 const nameInput = document.getElementById("name-registro")
 const passwordInput = document.getElementById("password-registro")
+const passwordInputLogin = document.getElementById("password-login")
+const userInputLogin = document.getElementById("user-login")
 document.getElementById("registrar").addEventListener("click",registroUsuarios);
 
 
@@ -31,7 +33,7 @@ function registroUsuarios ()
         method: "POST",
         headers: {  "Content-Type": "application/json"},
         body: JSON.stringify({
-            image:imageRegistroInput.value,
+          image:imageRegistroInput.value,
           user: userInput.value,
           name: nameInput.value,
           password: passwordInput.value })
@@ -55,8 +57,8 @@ function loginUsuarios()
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          user: userInput.value,
-          password: passwordInput.value,
+          user: userInputLogin.value,
+          password: passwordInputLogin.value,
         }),
       })
         .then((response) => response.json())
